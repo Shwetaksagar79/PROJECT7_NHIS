@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disaster Tweet Classifier</title>
+</head>
+<body>
+    <h2>Disaster Tweet Classification</h2>
+    <form method="POST">
+        <textarea name="tweet" rows="4" cols="50" placeholder="Paste tweet here..."></textarea><br>
+        <button type="submit">Classify</button>
+    </form>
+    {% if result %}
+        <h3>Result: {{ result }}</h3>
+    {% endif %}
+</body>
+</html>
